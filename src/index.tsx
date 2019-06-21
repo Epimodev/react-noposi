@@ -40,7 +40,7 @@ class Notifier<T> {
     };
 
     const container = document.createElement('div');
-    container.style.position = 'absolute';
+    container.style.position = 'fixed';
     container.style.top = '0';
     container.style.right = '0';
     container.style.zIndex = `${zIndex}`;
@@ -54,7 +54,6 @@ class Notifier<T> {
       translateDelay,
       animationClassNames,
       animationDuration,
-      zIndex,
     } = this.options;
 
     const notificationElement = (
